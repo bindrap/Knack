@@ -1,0 +1,42 @@
+<!DOCTYPE html >
+<html> 
+	<head> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        form { 
+              margin: 0 auto; 
+              width:250px;
+        }
+        .bg-img {
+        /* The image used */
+        background-image: url("3001.jpg");
+
+        min-height: 380px;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+        </style>
+	</head> 
+        <body>
+           <div class="bg-img">
+               <font color="#FFF700">
+		<form action="calculate.php" method="post">
+                <p> PARTEEK'S MONEY SAVER </p>
+		<p> <input type=text name="wage"> </p>
+	    <p> Enter how much money you think you will spend on food (Be Honest): </p>
+		<p> <input type=text name="food"> </p>
+		<p> Enter how much you will spend on phone bill: </p>
+		<p> <input type=text name="phone"> </p>
+		<p> Enter how much you will spend on gas: </p>
+		<p> <input type=text name="gas"> </p>
+		<p> Enter Recreational Expenses (Other): </p>
+		<p> <input type=text name="rec"> </p>
+		<input value="Submit" type="submit">
+		</form>
+               </font>
+           </div>
+	</body> 
+</html> 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+	<link rel="stylesheet" href="soft_style.css">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+	<p><b><i>Click button to share location </i></b></p> 
+		<button class = "geeks" onclick="getlocation()">Share Location</button><p id="demo1"></p> 
+		
+	<p><img src="NAMES.png" alt="NAMES" style="float:right;width:225px;height:300px;position: absolute;top: 0px;right: 0px;"></p>
+  </head>
+  
+  <body onload="startTime(),timealert()" background="circuit.png">
+    
+	<div id="floating-panel">
+	
+	<form>
+	  <label><b>Enter custom address: </b></label>
+	  <input type="text" name="address" id="address">
+	</form>
+    
+	<b>Start: </b>
+    <select id="start">
+	  <option value="st.dennis gym, windsor, ontario">St.Dennis Gym, Windsor, On</option>
+      <option value="forest glade library, windsor, ontario">Forest Glade Skatepark</option>
+      <option value="techumseh arena, windsor, ontario">Techumseh Skatepark</option>
+	  <option value="atkinson pool, windsor, ontario">Atkinson Skatepark</option>
+	  <option value="vollmer pool, windsor, ontario">LaSalle Skatepark</option>
+	  <option value="850 Ouellette Ave, windsor, ontario">Downtown Windsor Library</option>
+	  <option value="401 Sunset Ave, windsor, ontario">Leddy Library</option>
+	  <option value="3312 Sandwich St, windsor, ontario">Sandwich Library</option>
+	  <option value="1295 Campbell Ave, windsor, ontario">Bridgeview Library</option>
+	  <option value="1310 Grand Marais Rd W, windsor, ontario">Budimir Library</option>
+	  <option value="1075 Ypres Ave, windsor, ontario">W. F. Chisholm Library</option>
+	  <option value="forest glade library, windsor, ontario">Forest Glade Library</option>
+	  <option id="uservalue" >User Location</option>
+    </select>
+    
+	<b>End: </b>
+    <select id="end">
+      <option value="42.3122184, -83.0683414">Leddy</option>
+	  <option value="st.dennis gym, windsor, ontario">St.Dennis Gym, Windsor, On</option>
+      <option value="forest glade library, windsor, ontario">Forest Glade Skatepark</option>
+      <option value="techumseh arena, windsor, ontario">Techumseh Skatepark</option>
+	  <option value="atkinson pool, windsor, ontario">Atkinson Skatepark</option>
+	  <option value="vollmer pool, windsor, ontario">LaSalle Skatepark</option>
+	  <option value="850 Ouellette Ave, windsor, ontario">Downtown Windsor Library</option>
+	  <option value="401 Sunset Ave, windsor, ontario">Leddy Library</option>
+	  <option value="3312 Sandwich St, windsor, ontario">Sandwich Library</option>
+	  <option value="1295 Campbell Ave, windsor, ontario">Bridgeview Library</option>
+	  <option value="1310 Grand Marais Rd W, windsor, ontario">Budimir Library</option>
+	  <option value="1075 Ypres Ave, windsor, ontario">W. F. Chisholm Library</option>
+	  <option value="forest glade library, windsor, ontario">Forest Glade Library</option>
+	  <option value="11156 Timberbay"id="addr">Custom Address</option>
+    </select>
+    
+	</div>
+	
+	<p><img src="skateboard_web.png" alt="Logo" style="float:right;width:300px;height:300px;">
+    <div id="map"></div>
+	<div id="txt"></div>
+	<script src="software.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH8Xqc8IVRRaARb0wmV0K3ASG6OK9_cFQ&callback=initMap"> </script>
+  </body>
+</html>
